@@ -12,7 +12,7 @@ import Fotos from '../pages/Fotos';
 export default function Routes() {
   return (
     <Switch>
-      <MyRoute exact path="/" component={Alunos} isClosed />
+      <MyRoute exact path="/" component={Alunos} isClosed={false} />
       <MyRoute exact path="/aluno/:id/edit" component={Aluno} isClosed />
       <MyRoute exact path="/aluno/" component={Aluno} isClosed />
       <MyRoute exact path="/fotos/:id" component={Fotos} isClosed />
